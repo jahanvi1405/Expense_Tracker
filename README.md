@@ -15,4 +15,11 @@ https://jahanvi1405.github.io/Expense_Tracker/
 🛠️ Technologies Used
 HTML5 — Structure and content
 CSS3 — Styling and responsive design
-JavaScript — Application logic and interactivity
+JavaScript — Application logic and interactivity 
+📂 Project Structure
+Expense_Tracker/
+│
+├── index.html      # Main webpage
+├── style.css       # Styling and responsive design
+├── script.js       # Expense tracker functionality
+└── README.md       # Project documentation
