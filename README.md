@@ -32,4 +32,11 @@ Designing responsive layouts with CSS
 Manipulating the DOM using JavaScript
 Handling user input and events
 Implementing interactive frontend functionality
-Organizing a small web project using separate HTML, CSS, and JavaScript files
+Organizing a small web project using separate HTML, CSS, and JavaScript files 
+⚙️ How to Run Locally
+Clone the repository:
+git clone https://github.com/jahanvi1405/Expense_Tracker.git
+Open the project folder.
+Open index.html in your browser.
+
+That's it — no installation or dependencies required. 🎉
