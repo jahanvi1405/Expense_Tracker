@@ -23,3 +23,13 @@ Expense_Tracker/
 ├── style.css       # Styling and responsive design
 ├── script.js       # Expense tracker functionality
 └── README.md       # Project documentation
+🧠 What I Learned
+
+Through this project, I practiced:
+
+Creating structured webpages using semantic HTML
+Designing responsive layouts with CSS
+Manipulating the DOM using JavaScript
+Handling user input and events
+Implementing interactive frontend functionality
+Organizing a small web project using separate HTML, CSS, and JavaScript files
