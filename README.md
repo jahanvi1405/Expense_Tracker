@@ -40,3 +40,13 @@ Open the project folder.
 Open index.html in your browser.
 
 That's it — no installation or dependencies required. 🎉
+🔮 Future Improvements
+
+Some features that could be added in future versions:
+
+💾 Local Storage support
+📈 Expense charts and analytics
+🏷️ Expense categories
+🔍 Filtering and searching expenses
+📅 Date-based expense tracking
+📱 Further mobile UI improvements
