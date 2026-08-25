@@ -12,3 +12,7 @@ https://jahanvi1405.github.io/Expense_Tracker/
 📊 View expense information at a glance
 🖥️ Clean and responsive user interface
 ⚡ Built with vanilla JavaScript — no frameworks required
+🛠️ Technologies Used
+HTML5 — Structure and content
+CSS3 — Styling and responsive design
+JavaScript — Application logic and interactivity
