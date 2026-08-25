@@ -50,3 +50,10 @@ Some features that could be added in future versions:
 🔍 Filtering and searching expenses
 📅 Date-based expense tracking
 📱 Further mobile UI improvements
+👩‍💻 Author
+
+Jahanvi
+
+GitHub: @jahanvi1405
+
+⭐ If you found this project useful, consider giving it a star!
