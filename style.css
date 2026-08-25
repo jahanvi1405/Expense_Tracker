@@ -1,299 +1,95 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 15px;
-
-    /* Modern gradient background */
-    background:
-        radial-gradient(circle at top left, #6a11cb 0%, transparent 35%),
-        radial-gradient(circle at bottom right, #2575fc 0%, transparent 35%),
-        linear-gradient(135deg, #0f172a, #1e293b);
-
-    color: #1e293b;
+body{
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
-/* Main container */
-.container {
-    width: 440px;
-    max-width: 100%;
-    padding: 30px;
-
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 24px;
-
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.25),
-        0 0 40px rgba(99, 102, 241, 0.15);
-
-    backdrop-filter: blur(15px);
+.container{
+    width:420px;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
-/* Main heading */
-.container > h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-size: 32px;
-    font-weight: 700;
-
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h1{
+    text-align:center;
+    margin-bottom:20px;
 }
 
-/* Balance card */
-.balance-card {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-
-    padding: 25px;
-    border-radius: 18px;
-    margin-bottom: 25px;
-
-    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.35);
-
-    position: relative;
-    overflow: hidden;
+.balance-card{
+    background:#4CAF50;
+    color:#fff;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
 }
 
-/* Decorative circle */
-.balance-card::after {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 150px;
-
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 50%;
-
-    right: -50px;
-    top: -50px;
+.summary{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
 }
 
-.balance-card h2 {
-    font-size: 16px;
-    font-weight: 500;
-    opacity: 0.85;
-}
-
-.balance-card h1 {
-    text-align: left;
-    font-size: 38px;
-    margin: 8px 0 20px;
-    position: relative;
-    z-index: 1;
-}
-
-/* Income / Expense summary */
-.summary {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    position: relative;
-    z-index: 1;
-}
-
-.summary > div {
-    flex: 1;
-    padding: 12px;
-
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-
-    backdrop-filter: blur(5px);
-}
-
-.summary h3 {
-    font-size: 13px;
-    font-weight: 500;
-    opacity: 0.8;
-}
-
-.summary p {
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 5px;
-}
-
-/* Form */
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 28px;
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-bottom:20px;
 }
 
 input,
-select {
-    width: 100%;
-    padding: 13px 14px;
-
-    font-size: 15px;
-
-    border: 1px solid #e2e8f0;
-    border-radius: 10px;
-
-    outline: none;
-    background: #f8fafc;
-
-    transition: 0.25s ease;
+select{
+    padding:10px;
+    font-size:16px;
 }
 
-input:focus,
-select:focus {
-    border-color: #667eea;
-    background: white;
-
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+button{
+    padding:12px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
 }
 
-/* Add button */
-button {
-    padding: 13px;
-
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-
-    border: none;
-    border-radius: 10px;
-
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-
-    transition: 0.25s ease;
+button:hover{
+    background:#388E3C;
 }
 
-button:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 18px rgba(102, 126, 234, 0.35);
+ul{
+    list-style:none;
 }
 
-button:active {
-    transform: translateY(0);
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    margin-bottom:10px;
+    background:#eee;
+    border-left:6px solid green;
 }
 
-/* History heading */
-.container > h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #334155;
+.expense{
+    border-left:6px solid red;
 }
 
-/* Transaction list */
-ul {
-    list-style: none;
-}
-
-/* Transaction item */
-li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    padding: 14px 15px;
-    margin-bottom: 12px;
-
-    background: #f8fafc;
-
-    border-radius: 12px;
-
-    border-left: 5px solid #22c55e;
-
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-
-    transition: 0.25s ease;
-}
-
-li:hover {
-    transform: translateX(4px);
-    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.08);
-}
-
-/* Transaction title */
-li span:first-child {
-    flex: 1;
-    font-weight: 600;
-    color: #334155;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* Transaction amount */
-li span:nth-child(2) {
-    font-weight: 700;
-    color: #16a34a;
-}
-
-/* Expense transaction */
-li.expense {
-    border-left-color: #ef4444;
-}
-
-li.expense span:nth-child(2) {
-    color: #ef4444;
-}
-
-/* Delete button */
-.delete {
-    background: #fee2e2;
-    color: #ef4444;
-
-    padding: 6px 9px;
-
-    border-radius: 7px;
-
-    font-size: 12px;
-    font-weight: 700;
-
-    transition: 0.2s ease;
-}
-
-.delete:hover {
-    background: #ef4444;
-    color: white;
-
-    box-shadow: none;
-    transform: scale(1.05);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 500px) {
-
-    body {
-        padding: 15px;
-    }
-
-    .container {
-        padding: 22px;
-        border-radius: 18px;
-    }
-
-    .container > h1 {
-        font-size: 27px;
-    }
-
-    .balance-card h1 {
-        font-size: 32px;
-    }
-
-    .summary {
-        gap: 8px;
-    }
-
-    .summary p {
-        font-size: 16px;
-    }
+.delete{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    cursor:pointer;
+    border-radius:4px;
 }
