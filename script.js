@@ -107,5 +107,3 @@ addBtn.addEventListener("click", () => {
     text.focus();
 
 });
-
-displayTransactions();
